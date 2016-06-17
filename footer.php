@@ -1,3 +1,2 @@
-<p>
-  Footer is working...
-</p>
+  </body>
+</html>
