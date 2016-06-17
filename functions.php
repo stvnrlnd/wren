@@ -1,6 +1,7 @@
 <?php
 
   add_theme_support( 'menus' );
+  add_theme_support( 'post-thumbnails' );
 
   function wren_theme_styles() {
     wp_enqueue_style( 'font_css', 'https://fonts.googleapis.com/css?family=Lato' );
