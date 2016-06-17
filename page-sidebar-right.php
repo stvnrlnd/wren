@@ -5,7 +5,7 @@
  ?>
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container animsition">
   <main class="col-md-9">
     <section>
       <?php if( have_posts() ) : while( have_posts() ) : the_post();  ?>
