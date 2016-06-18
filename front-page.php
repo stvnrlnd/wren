@@ -1,20 +1,16 @@
-<?php
-/*
-  Template Name: Portfolio Page
-*/
-?>
 <?php get_header(); ?>
-<div class="animsition">
-  <header class="jumbotron text-center">
-    <h1><?php wp_title( '' ); ?></h1>
-  </header>
-  <main class="container">
+
+<div class="container animsition">
+  <main>
     <section>
       <?php if( have_posts() ) : while( have_posts() ) : the_post();  ?>
-        <?php the_content(); ?>
+        <p>
+          <?php the_content(); ?>
+        </p>
       <?php endwhile; endif; ?>
     </section>
     <section>
+      <h1 class="text-center">My Portfolio</h1>
       <?php get_template_part('content', 'portfolio'); ?>
     </section>
   </main>

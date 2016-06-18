@@ -12,12 +12,12 @@
   <body <?php body_class(); ?>>
     <div>
       <header>
-        <nav>
-          <div class="container-fluid">
+          <div class="container">
             <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
             <h3>
               <?php bloginfo('description') ?>
             </h3>
+            <nav>
             <?php
               $defaults = array(
                 'container' => false,
@@ -26,7 +26,7 @@
               );
               wp_nav_menu( $defaults );
             ?>
+            </nav>
           </div>
-        </nav>
       </header>
     </div>
