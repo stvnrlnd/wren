@@ -17,3 +17,24 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
   font-family: "Lato", sans-serif;
 }
+h1 {
+  font-size: 44px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 36px;
+}
+h4 {
+  font-size: 32px;
+}
+h5 {
+  font-size: 28px;
+}
+h6 {
+  font-size: 24px;
+}
+p {
+  font-size: 20px;
+}
