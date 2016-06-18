@@ -23,4 +23,9 @@
   }
   add_action('init', 'register_theme_menus');
 
+  function wren_excerpt_length( $length ) {
+    return 25;
+  }
+  add_filter( 'excerpt_length', 'wren_excerpt_length', 999 );
+
 ?>

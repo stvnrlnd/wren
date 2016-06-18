@@ -4,12 +4,14 @@
 */
  ?>
 <?php get_header(); ?>
-
-<div class="container animsition">
-  <main class="col-md-9">
-    <section>
+<header class="jumbotron text-center">
+  <h1><?php wp_title( '' ); ?></h1>
+</header>
+<div class="container">
+  <main class="col-md-9 animsition">
+    <section class="text-center">
       <?php if( have_posts() ) : while( have_posts() ) : the_post();  ?>
-        <h1 class="text-center"><?php the_title(); ?></h1>
+        <h1><?php the_title(); ?></h1>
         <hr>
         <p>
           <?php the_content(); ?>
@@ -22,9 +24,10 @@
     </section>
   </main>
   <aside class="col-md-3">
-    <p>
+    <h3 class="text-center">
       Sidebar
-    </p>
+    </h3>
+    <hr>
   </aside>
 </div>
 

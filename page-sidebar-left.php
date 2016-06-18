@@ -1,20 +1,23 @@
 <?php
 /*
-  Template Name: Right Sidebar
+  Template Name: Left Sidebar
 */
  ?>
 <?php get_header(); ?>
-
-<div class="container animsition">
+<header class="jumbotron text-center">
+  <h1><?php wp_title( '' ); ?></h1>
+</header>
+<div class="container">
   <aside class="col-md-3">
-    <p>
+    <h3 class="text-center">
       Sidebar
-    </p>
+    </h3>
+    <hr>
   </aside>
-  <main class="col-md-9">
-    <section>
+  <main class="col-md-9 animsition">
+    <section class="text-center">
       <?php if( have_posts() ) : while( have_posts() ) : the_post();  ?>
-        <h1 class="text-center"><?php the_title(); ?></h1>
+        <h1><?php the_title(); ?></h1>
         <hr>
         <p>
           <?php the_content(); ?>

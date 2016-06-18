@@ -12,28 +12,20 @@
   <body <?php body_class(); ?>>
     <div>
       <header>
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav>
           <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-menu-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="primary-menu-collapse">
-              <?php
-                $defaults = array(
-                  'container' => false,
-                  'theme_location' => 'primary-menu',
-                  'menu_class' => 'nav navbar-nav navbar-right'
-                );
-                wp_nav_menu( $defaults );
-              ?>
-            </div>
+            <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+            <h3>
+              <?php bloginfo('description') ?>
+            </h3>
+            <?php
+              $defaults = array(
+                'container' => false,
+                'theme_location' => 'primary-menu',
+                'menu_class' => 'nav nav-pills pull-right'
+              );
+              wp_nav_menu( $defaults );
+            ?>
           </div>
         </nav>
       </header>

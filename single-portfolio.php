@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<div class="container animsition">
-  <main class="col-md-9">
+<div class="container">
+  <main class="col-md-9 animsition">
     <section>
       <?php if( have_posts() ) : while( have_posts() ) : the_post();  ?>
         <?php the_field('images'); ?>
@@ -12,8 +12,8 @@
         </p>
         <nav class="text-center">
           <ul class="pager">
-            <li><?php previous_post_link(); ?> </li>
-            <li><?php next_post_link(); ?></li>
+            <li><?php previous_post_link( '%link' ); ?> </li>
+            <li><?php next_post_link( '%link' ); ?></li>
           </ul>
         </nav>
       <?php endwhile; else : ?>
