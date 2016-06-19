@@ -39,10 +39,6 @@ h6 {
 p {
   font-size: 20px;
 }
-.brand-header {
-  z-index: 9999;
-  background-color: #fff;
-}
 .brand-title a {
   font-family: 'Dancing Script', cursive;
   color: #777;
@@ -51,10 +47,85 @@ p {
   text-decoration: none;
   color: #222;
 }
+.list-inline > .menu-item > a {
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #777;
+}
+.list-inline > .menu-item > a:hover {
+  color: #222;
+  text-decoration: none;
+}
 .jumbotron {
   background-color: #0099CC;
   color: #fff;
 }
-.jumbotron-feature i{
-  font-size: 72px;
+.widget > ul {
+  list-style: none;
+  padding: 0;
+}
+.widget > ul > li {
+  display: inline-block;
+}
+.widget > ul > li > a {
+  display: inline-block;
+  padding: 10px 15px;
+  border-bottom: 4px solid transparent;
+}
+.widget > ul > li > a:hover {
+  text-decoration: none;
+  border-bottom: 4px solid #0099CC;
+}
+.widget > form > div > label {
+  display: none;
+}
+.widget > form > div > input#s {
+  border: none;
+  border-bottom: 1px solid #777;
+}
+.widget > form > div > input#s:focus {
+  outline: none;
+  border-bottom: 2px solid #0099CC;
+}
+.widget > form > div > input#searchsubmit {
+  display: inline-block;
+  padding: 5px;
+  background-color: #fff;
+  color: #777;
+  border: none;
+}
+.widget > form > div > input#searchsubmit:hover {
+  color: #0099CC;
+}
+.avatar {
+  border-radius: 50%;
+}
+.post-feature-img {
+  max-height: 150px;
+  overflow: hidden;
+}
+.post-header-img {
+  max-height: 500px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+@media (min-width: 993px) {
+  .list-inline > .menu-item > a {
+    padding: 5px 10px;
+    font-size: 24px;
+    color: #777;
+  }
+  .widget > ul > li {
+    display: block;
+  }
+  .widget > ul > li > a {
+    display: block;
+    padding: 10px 15px;
+    border-left: 4px solid transparent;
+  }
+  .widget > ul > li > a:hover {
+    text-decoration: none;
+    border-bottom: none;
+    border-left: 4px solid #0099CC;
+  }
 }

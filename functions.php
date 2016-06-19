@@ -29,9 +29,9 @@
       'id' => $id,
       'description' => __( $description ),
       'before_widget' => '<div class="widget">',
-      'after_widget' => '</div>',
-      'before_title' => '<h4>',
-      'after_title' => '</h4>'
+      'after_widget' => '</div><hr>',
+      'before_title' => '<small class="text-uppercase text-muted">',
+      'after_title' => '</small>'
     ) );
   }
   wren_create_widget( 'Page Sidebar', 'page', 'Displays on the side of the pages with a sidebar.' );
