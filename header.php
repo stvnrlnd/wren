@@ -9,20 +9,18 @@
     <?php wp_head(); ?>
 
   </head>
-  <body <?php body_class(); ?>>
+  <body class="animsition">
     <div>
-      <header>
+      <header class="brand-header">
           <div class="container">
-            <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-            <h3>
-              <?php bloginfo('description') ?>
-            </h3>
-            <nav>
+              <h1 class="brand-title"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+              <h6><small><?php bloginfo('description') ?></small></h6>
+            <nav class="pull-right">
             <?php
               $defaults = array(
                 'container' => false,
                 'theme_location' => 'primary-menu',
-                'menu_class' => 'nav nav-pills pull-right'
+                'menu_class' => 'list-inline'
               );
               wp_nav_menu( $defaults );
             ?>

@@ -24,10 +24,7 @@
     </section>
   </main>
   <aside class="col-md-3">
-    <h3 class="text-center">
-      Sidebar
-    </h3>
-    <hr>
+    <?php get_sidebar(); ?>
   </aside>
 </div>
 

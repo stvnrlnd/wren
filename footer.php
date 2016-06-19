@@ -1,9 +1,9 @@
     <div class="container">
       <hr>
-      <footer>
-        <p class="text-center">
+      <footer class="text-center">
+        <small>
           &copy; <?php echo date('Y'); ?> | <?php bloginfo('name'); ?>
-        </p>
+        </small>
       </footer>
     </div>
     <?php wp_footer(); ?>

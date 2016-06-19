@@ -4,7 +4,7 @@
   add_theme_support( 'post-thumbnails' );
 
   function wren_theme_styles() {
-    wp_enqueue_style( 'font_css', 'https://fonts.googleapis.com/css?family=Lato' );
+    wp_enqueue_style( 'font_css', 'https://fonts.googleapis.com/css?family=Dancing+Script|Lato' );
     wp_enqueue_style( 'bootstrap_css', get_template_directory_uri().'/css/bootstrap.css' );
     wp_enqueue_style( 'jquery_animsition_css', get_template_directory_uri().'/css/animsition.min.css' );
     wp_enqueue_style( 'main_css', get_template_directory_uri().'/style.css' );
@@ -22,6 +22,20 @@
     register_nav_menus( array( 'primary-menu' => __( 'Primary Menu' ) ) );
   }
   add_action('init', 'register_theme_menus');
+
+  function wren_create_widget( $name, $id, $description ) {
+    register_sidebar( array(
+      'name' => __( $name ),
+      'id' => $id,
+      'description' => __( $description ),
+      'before_widget' => '<div class="widget">',
+      'after_widget' => '</div>',
+      'before_title' => '<h4>',
+      'after_title' => '</h4>'
+    ) );
+  }
+  wren_create_widget( 'Page Sidebar', 'page', 'Displays on the side of the pages with a sidebar.' );
+  wren_create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of the pages with the blog section.' );
 
   function wren_excerpt_length( $length ) {
     return 25;

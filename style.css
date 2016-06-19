@@ -16,6 +16,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
   font-family: "Lato", sans-serif;
+  color: #555;
 }
 h1 {
   font-size: 44px;
@@ -37,4 +38,23 @@ h6 {
 }
 p {
   font-size: 20px;
+}
+.brand-header {
+  z-index: 9999;
+  background-color: #fff;
+}
+.brand-title a {
+  font-family: 'Dancing Script', cursive;
+  color: #777;
+}
+.brand-title a:hover {
+  text-decoration: none;
+  color: #222;
+}
+.jumbotron {
+  background-color: #0099CC;
+  color: #fff;
+}
+.jumbotron-feature i{
+  font-size: 72px;
 }
